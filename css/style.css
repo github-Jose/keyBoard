@@ -1,0 +1,110 @@
+*{
+	margin:0;
+	padding:0;
+}
+a{
+	text-decoration: none;
+}
+body{
+	background: url('../image/bg.jpg') center/100% 100% no-repeat;
+	position: relative;
+	height: 100vh;
+	overflow: hidden;
+}
+header{
+
+}
+header > .not > span{
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+}
+header p{
+	padding-left: 20px;
+	box-sizing: border-box;
+	margin-top: 20px;
+	color: antiquewhite;
+}
+header p span{
+	position: relative;
+	top: 2px;
+}
+header > .not >span >img{
+	max-width: 100%;
+}
+header > .edit > span{
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+}
+header > .edit >span >img{
+	max-width: 100%;
+}
+main{
+	text-align: center;
+	/* height: 100vh; */
+	/* position: relative; */
+}
+.wrapper{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width: 100%;
+	background-color: rgba(255,255,255,0.4);
+}
+.wrapper > div{
+	margin-top: 10px;
+}
+.wrapper >div:nth-child(4){
+	margin-bottom: 10px;
+}
+kbd{
+	width: 65px;
+	height: 52px;
+	/* border:1px solid red; */
+	display: inline-block;
+	text-transform: uppercase;
+	/*line-height: 2em;*/
+	position: relative;
+	margin-left: 10px;
+	box-sizing: border-box;
+	background-color: #000000;
+	color: #fff;
+	font-weight: bold;
+	font-size: 16px;
+	box-shadow: 1px 1px 5px 0px rgba(113,113,113,1);
+}
+kbd > button{
+	display: inline-block;
+	font-size: 12px;
+	position: absolute;
+	right: 3px;
+	bottom: 3px;
+	display: none;
+	background: none;
+	border: none;
+	/* box-shadow: 0px 0px 42px -12px rgba(113,113,113,1); */
+	cursor: pointer;
+}
+button > img{
+	width: 16px;
+	height: 16px;
+}
+button:focus{
+	outline: none;
+}
+kbd:hover button{
+	display: inline-block;
+}
+kbd > span{
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	position: absolute;
+	left: 3px;
+	bottom: 3px;
+}
+kbd > span >img{
+	max-width: 100%;
+}
